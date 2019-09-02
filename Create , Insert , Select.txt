@@ -1,0 +1,72 @@
+CREATE TABLE User
+(id varchar (10)  primary key,
+ pass varchar(20) ,
+ no_hp varchar(20),
+ email varchar (20),
+ nama varchar (20)
+)
+
+CREATE TABLE Kosan
+(nama_kos varchar(20),
+ alamat_kos varchar(20),
+ pemilik_kos varchar (20),
+ harga_kos integer,
+ fasilitas_kos text,
+ id_kos varchar(10) primary key
+)
+
+CREATE TABLE Bayar
+(id_pembayaran varchar(10) primary key,
+ jumlah_pembayaran integer,
+ id_booking varchar (10)
+)
+
+CREATE TABLE Booking
+(id_booking varchar(10) primary key,
+ id_kos varchar(10),
+ id varchar (10)
+)
+
+CREATE TABLE Kurir
+(kendaraan varchar(20),
+ no_hp varchar(20),
+)
+
+CREATE TABLE Admin
+(id varchar(10),
+ password varchar(20),
+)
+
+insert into user
+
+values (‘0001’,’11111’,’081211112222’,’iim@gmail.com’,’iim’) insert into user
+values (‘0002’,’22222’,’081211113333’,’dita@gmail.com’,’dita’) insert into user
+values (‘0003’,’33333’,’081211114444’,’hani@gmail.com’,’hani’) insert into user
+values (‘0004’,’44444’,’081211115555’,’dede@gmail.com’,’dede’) insert into user
+values (‘0005’,’55555’,’081211116666’,’budi@gmail.com’,’budi’) insert into user
+values (‘0006’,’66666’,’081211117777’,’yaya@gmail.com’,’yaya’) insert into user
+values (‘0007’,’77777’,’081211118888’,’sasa@gmail.com’,’sasa’) insert into user
+values (‘0008’,’88888’,’081211119999’,’aura@gmail.com’,’aura’) insert into user
+values (‘0009’,’99999’,’081211111010’,’donkey@gmail.com’,’donkey’) insert into user
+values (‘0010’,’12121’,’081211112020’,’lumi@gmail.com’,’lumi’) insert into user
+
+
+insert into kosan
+
+values (‘galeri’,’sukabirus’,’layla’,’700.000’,’meja, kasur, wc dalam’,’0001’) insert into kosan
+values (‘melati’,’cisalak’,’roger’,’900.000’,’ac, meja, kasur, wc dalam’,’0002’) insert into kosan
+values (‘sakura’,’cipedes’,’gusion’,’1.000.000’,’ac, meja, kasur, wc dalam’,’0003’) insert into kosan
+values (‘mawar’,’cicabe’,’kadita’,’500.000’,’meja, kasur’,’0004’) insert into kosan
+values (‘gagak’,’mangkubumi’,’freya’,’600.000’,’kasur’,’0005’) insert into kosan
+values (‘harimau’,’ciganitri’,’ina’,’750.000’,’meja, kasur, wc dalam’,’0006’) insert into kosan
+values (‘beruang’,’cikoneng’,’kuskus’,’950.000’,’ac, meja, kasur, wc dalam’,’0007’) insert into kosan
+values (‘macan’,’buah kayu’,’boim’,’800.000’,’meja, kasur, wc dalam’,’0008’) insert into kosan
+values (‘arpis’,’banding’,’alukar’,’850.000’,’meja, kasur, wc dalam’,’0009’) insert into kosan
+values (‘anggrek’,’pontianuk’,’lunox’,’650.000’,’meja, kasur’,’0010’) insert into kosan
+
+Select * from User;
+Select * from Bayar;
+Select * from Kosan;
+Select * from Kurir;
+Select * from Booking;
+Select * from Admin;
